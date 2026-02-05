@@ -1,0 +1,105 @@
+# ============================================================================
+# .gitignore — reino-oidc-releases (repositório público)
+# Comitar somente: docs/ (portal), README, LICENSE, VERSION, CHANGELOG, etc.
+# ============================================================================
+
+# ============================================================================
+# Segurança — nunca versionar
+# ============================================================================
+
+# Variáveis de ambiente e segredos
+.env
+.env.local
+.env.*.local
+.env.*
+*.env
+
+# Tokens e credenciais
+*token*.txt
+*TOKEN*.txt
+*.secret
+*.key
+*.pem
+*.pfx
+secrets.txt
+credentials*
+*.credentials
+gh_token.txt
+RELEASES_REPO_TOKEN.txt
+.github_token
+
+# ============================================================================
+# IDE e editores
+# ============================================================================
+
+.cursor/
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+*~
+.vs/
+
+# ============================================================================
+# Sistema operacional
+# ============================================================================
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# Linux
+.directory
+.Trash-*
+.nfs*
+
+# ============================================================================
+# Logs e temporários
+# ============================================================================
+
+*.log
+*.log.*
+logs/
+tmp/
+temp/
+*.tmp
+*.temp
+*.bak
+*.backup
+*.old
+*.save
+
+# ============================================================================
+# Build e artefatos (não versionar gerados locais)
+# ============================================================================
+
+dist/
+build/
+node_modules/
+
+# Empacotamento
+*.zip
+*.tar.gz
+*.rar
+
+# ============================================================================
+# O que NÃO ignorar (manter versionados)
+# ============================================================================
+# docs/          — portal estático do Reino OIDC
+# README.md      — apresentação do repo
+# LICENSE        — licença do conteúdo
+# VERSION        — versão do portal
+# CHANGELOG.md   — histórico de mudanças
+# PUBLICO_ALVO.md, WORKSPACE.md — documentação
