@@ -55,6 +55,7 @@ O conteúdo em **docs/** é espelho do portal **delivery/oidc** (matriz no domí
 
 ## Onde acessar?
 
+- **Download EXE (recomendado):** [Releases / ReinoOIDC.exe](https://github.com/chmulato/reino-oidc-releases/releases/latest) — baixe o aplicativo Windows (versão FREE).
 - **Repositório público:** [github.com/chmulato/reino-oidc-releases](https://github.com/chmulato/reino-oidc-releases)
 - **Vitrine (GitHub Pages):** [chmulato.github.io/reino-oidc-releases/](https://chmulato.github.io/reino-oidc-releases/) (Settings → Pages → Source: branch `main`, folder `/docs`).
 - **Portal Cara Core Informática:** [caracore.com.br/delivery/oidc/](https://caracore.com.br/delivery/oidc/) — apresentação centralizada no portfólio da Cara Core.
@@ -64,8 +65,8 @@ O conteúdo em **docs/** é espelho do portal **delivery/oidc** (matriz no domí
 
 ## Próximos passos (para você)
 
-1. **Explorar o portal** em `docs/` (ou via GitHub Pages quando ativado).
-2. **Ler a história** (Parte I → II → III) e conhecer os personagens.
+1. **Baixar o aplicativo** [ReinoOIDC.exe](https://github.com/chmulato/reino-oidc-releases/releases/latest) (versão FREE para Windows).
+2. **Ler a história** (Parte I → II → III) e conhecer os personagens (no app ou em `docs/`).
 3. **Praticar na Academia** com os 60 flashcards nos três níveis.
 4. **Consultar o glossário** e os mapas técnicos para fixar conceitos.
 5. **Contribuir** com sugestões, traduções ou melhorias via Issues e Pull Requests.
