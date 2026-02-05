@@ -30,16 +30,28 @@ git remote set-url origin https://github.com/chmulato/reino-oidc-releases.git
 
 ---
 
+## Espelho de delivery (mesma lógica do Cara Core Seed)
+
+| Onde | Papel | Caminho |
+|------|--------|---------|
+| **Domínio Cara Core Informática** | Portal completo (fonte de verdade) | `D:\dev\site\cara-core\delivery\oidc` |
+| **Vitrine e balcão público** | Espelho (este repositório) | `D:\dev\reino_oidc_releases` → pasta **docs/** |
+
+O conteúdo em **docs/** é espelho do portal **delivery/oidc**. Ao alterar o portal, sincronize **docs/** (e ajuste links para o portfólio: na vitrine use URL absoluta para caracore.com.br/portfolio.html#reino-oidc).
+
+---
+
 ## Estrutura do workspace
 
 | Pasta/arquivo | Uso |
 |---------------|-----|
-| **docs/** | Conteúdo do site estático (HTML, assets, md). Publicado via GitHub Pages (Source: branch `main`, folder `/docs`). |
-| **README.md** | Apresentação do projeto, público-alvo e links. |
+| **docs/** | Conteúdo do site estático (HTML, assets, md) — **espelho** de `site/cara-core/delivery/oidc`. Publicado via GitHub Pages (Source: branch `main`, folder `/docs`). Inclui **upgrade-trono.html** (O Trono da Identidade, R$ 29,90). |
+| **README.md** | Apresentação do projeto, público-alvo, espelho de delivery e links. |
 | **CHANGELOG.md** | Histórico de versões e novas features. |
 | **VERSION** | Número da versão atual (ex.: 1.0.0). |
 | **LICENSE** | MIT. |
 | **WORKSPACE.md** | Este arquivo — workspace local e fluxo de delivery. |
+| **ESTRATEGIA_NEGOCIO_REINO_OIDC.md** | Estratégia FREE + upgrade R$ 29,90 e espelho portal/vitrine. |
 | **PUBLICO_ALVO.md** | Definição do público-alvo e diretrizes para novas features. |
 
 ---

@@ -42,12 +42,23 @@ O desenvolvimento e o código-fonte do projeto podem estar em repositório priva
 
 ---
 
+## Espelho de delivery (mesma lógica do Cara Core Seed)
+
+| Onde | Papel |
+|------|--------|
+| **Domínio Cara Core Informática** | Portal completo (fonte de verdade): `D:\dev\site\cara-core\delivery\oidc` · [caracore.com.br/delivery/oidc/](https://caracore.com.br/delivery/oidc/) |
+| **Vitrine e balcão público** | Espelho (este repositório): `docs/` publicado via GitHub Pages |
+
+O conteúdo em **docs/** é espelho do portal **delivery/oidc**. Ao atualizar o portal, sincronize **docs/** e ajuste links que apontam ao portfólio (na vitrine use URL absoluta para o site Cara Core).
+
+---
+
 ## Onde acessar?
 
 - **Repositório público:** [github.com/chmulato/reino-oidc-releases](https://github.com/chmulato/reino-oidc-releases)
-- **Portal (GitHub Pages):** [chmulato.github.io/reino-oidc-releases/](https://chmulato.github.io/reino-oidc-releases/) (Settings → Pages → Source: branch `main`, folder `/docs`).
-- **Delivery Cara Core Informática:** [caracore.com.br/delivery/oidc/](https://caracore.com.br/delivery/oidc/) — apresentação centralizada no portfólio da Cara Core.
-- **Repositório de desenvolvimento:** O código e a evolução do conteúdo ficam em repositório privado (ex.: reino_oidc); este repo é o canal **público** de releases e do site estático.
+- **Vitrine (GitHub Pages):** [chmulato.github.io/reino-oidc-releases/](https://chmulato.github.io/reino-oidc-releases/) (Settings → Pages → Source: branch `main`, folder `/docs`).
+- **Portal Cara Core Informática:** [caracore.com.br/delivery/oidc/](https://caracore.com.br/delivery/oidc/) — apresentação centralizada no portfólio da Cara Core.
+- **Upgrade O Trono da Identidade:** R$ 29,90 — página em `docs/upgrade-trono.html` (espelho de `delivery/oidc/upgrade-trono.html`).
 
 ---
 
