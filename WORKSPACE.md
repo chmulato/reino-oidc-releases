@@ -66,6 +66,9 @@ O conteúdo em **docs/** é espelho do portal **delivery/oidc**. Ao alterar o po
    - Isso atualiza a pasta `docs/` **deste** workspace local (`reino_oidc_releases`) com os HTML, assets e md mais recentes.
    - Ou copie manualmente o conteúdo de `reino_oidc` para `reino_oidc_releases/docs/`.
 
+   **Alinhar o portal do repo reino_oidc com esta vitrine:** no workspace **reino_oidc**, rode  
+   `python scripts/sync_vitrine_to_reino_oidc.py` para copiar `reino_oidc_releases/docs/` para a raiz de reino_oidc (portal que aparece no GitHub fica igual à vitrine).
+
 3. **Commit e push** — Neste workspace:
    ```bash
    git add docs/ VERSION CHANGELOG.md

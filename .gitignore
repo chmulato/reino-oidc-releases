@@ -103,3 +103,6 @@ node_modules/
 # VERSION        — versão do portal
 # CHANGELOG.md   — histórico de mudanças
 # PUBLICO_ALVO.md, WORKSPACE.md — documentação
+
+WORKSPACE.md
+PUBLICO_ALVO.md
