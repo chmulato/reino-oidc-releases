@@ -49,7 +49,7 @@ O desenvolvimento e o código-fonte do projeto podem estar em repositório priva
 | **Domínio Cara Core Informática** | Portal completo (fonte de verdade): `D:\dev\site\cara-core\delivery\oidc` · [caracore.com.br/delivery/oidc/](https://caracore.com.br/delivery/oidc/) |
 | **Vitrine e balcão público** | Espelho (este repositório): `docs/` publicado via GitHub Pages |
 
-O conteúdo em **docs/** é espelho do portal **delivery/oidc**. Ao atualizar o portal, sincronize **docs/** e ajuste links que apontam ao portfólio (na vitrine use URL absoluta para o site Cara Core).
+O conteúdo em **docs/** é espelho do portal **delivery/oidc** (matriz no domínio Cara Core). A matriz contém: **index.html** (balcão), **conteudo-free.html** (conteúdo FREE), **canal-feedback.html**, **licenca-uso.html** e **upgrade-trono.html**. Ao sincronizar da matriz para **docs/**, substitua `../../portfolio.html` por `https://caracore.com.br/portfolio.html#reino-oidc` na vitrine.
 
 ---
 
