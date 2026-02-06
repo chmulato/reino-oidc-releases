@@ -10,22 +10,19 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <div class="container">
-            <a class="navbar-brand" href="conteudo-free.html">🏰 Reino OIDC</a>
+            <a class="navbar-brand" href="index.html">🏰 Reino OIDC</a>
+            <span class="navbar-text ms-auto me-3 d-none d-md-inline">
+                <span class="text-white small" title="Cara Core Informática">Cara Core Informática</span>
+            </span>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="conteudo-free.html">🏠 Início</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="personagens.html">👥 Personagens</a>
-                    </li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">🏠 Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="personagens.html">👥 Personagens</a></li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            📖 História
-                        </a>
+                        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">📖 História</a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item" href="historia_p1.html">Parte I - A Era Sombria</a></li>
                             <li><a class="dropdown-item" href="historia_p2.html">Parte II - A Chegada do OIDC</a></li>
@@ -34,24 +31,13 @@
                             <li><a class="dropdown-item" href="conclusao.html">Conclusão</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="mundo_do_conhecimento.html">🌟 Conhecimento</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="caminho_feliz.html">✨ Caminho Feliz</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="aprendiz.html">🎓 Academia</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="glossario.html">📚 Glossário</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="mapas.html">🗺️ Mapas</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">🛒 Balcão</a>
-                    </li>
+                    <li class="nav-item"><a class="nav-link" href="mundo_do_conhecimento.html">🌟 Conhecimento</a></li>
+                    <li class="nav-item"><a class="nav-link" href="caminho_feliz.html">✨ Caminho Feliz</a></li>
+                    <li class="nav-item"><a class="nav-link" href="super_trunfo.html">🃏 Super Trunfo</a></li>
+                    <li class="nav-item"><a class="nav-link" href="aprendiz.html">🎓 Academia</a></li>
+                    <li class="nav-item"><a class="nav-link" href="glossario.html">📚 Glossário</a></li>
+                    <li class="nav-item"><a class="nav-link" href="mapas.html">🗺️ Mapas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="mapa_evolucao.html">📜 Evolução</a></li>
                 </ul>
             </div>
         </div>
@@ -147,6 +133,13 @@
                     </blockquote>
                 </div>
 
+                <!-- Concluir Parte III (Era 3 no Super Trunfo = Devia + Premium) -->
+                <div class="alert alert-info mt-4" id="concluir-parte-3-box">
+                    <p class="mb-2">Marque como lida. No Super Trunfo, a <strong>Era 3</strong> (Devia — Integradora Suprema, Seraph Resource, Ace Token) requer o Selo de Soberania da Cara-Core (R$ 29,90).</p>
+                    <button type="button" class="btn btn-outline-primary" id="btn-concluir-parte-3">✓ Concluí esta parte</button>
+                    <span class="ms-2 text-success d-none" id="concluido-parte-3">Parte III registrada.</span>
+                </div>
+
                 <!-- Navegação entre partes -->
                 <div class="row mt-4">
                     <div class="col-12">
@@ -190,5 +183,24 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="assets/js/game-engine.js"></script>
+    <script>
+        (function() {
+            var btn = document.getElementById('btn-concluir-parte-3');
+            var doneEl = document.getElementById('concluido-parte-3');
+            var box = document.getElementById('concluir-parte-3-box');
+            if (btn && window.ReinoEras) {
+                if (window.ReinoEras.getStoryPartDone(3)) {
+                    if (doneEl) doneEl.classList.remove('d-none');
+                    if (box) box.classList.remove('alert-info'), box.classList.add('alert-success');
+                }
+                btn.addEventListener('click', function() {
+                    window.ReinoEras.setStoryPartDone(3);
+                    if (doneEl) doneEl.classList.remove('d-none');
+                    if (box) box.classList.remove('alert-info'), box.classList.add('alert-success');
+                });
+            }
+        })();
+    </script>
 </body>
 </html>
