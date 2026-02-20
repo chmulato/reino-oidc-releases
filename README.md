@@ -1,6 +1,6 @@
 # Reino OIDC — Releases e portal público
 
-**Bem-vinda ao Reino da Identidade Federada.** Este repositório é o **portal público** do projeto Reino OIDC: material educacional aberto sobre **OAuth 2.1** e **OpenID Connect (OIDC)** — a base da autenticação que você usa todos os dias com **Google**, **Microsoft** e outras Big Techs.
+**Bem-vinda ao Reino da Identidade Federada.** Este repositório é o **portal público** do projeto Reino OIDC: material educacional **proprietário da Cara Core Informática** sobre **OAuth 2.1** e **OpenID Connect (OIDC)** — a base da autenticação que você usa todos os dias com **Google**, **Microsoft** e outras Big Techs.
 
 Com foco em **jovens programadoras** e no mundo da **Segurança**, o Reino OIDC transforma conceitos de autenticação e autorização em uma narrativa épica, personagens e jogos de aprendizado.
 
@@ -36,9 +36,11 @@ O Reino OIDC explica isso com:
 | Onde   | O que tem |
 |--------|-----------|
 | **docs/** | Site estático do Reino OIDC: página inicial, personagens, história (Parte I, II, III), conclusão, Academia, Mundo do Conhecimento, Caminho Feliz, glossário, mapas. |
-| **Raiz**  | Este README, LICENSE (MIT), VERSION e CHANGELOG para gestão de novas features. |
+| **Raiz**  | Este README, LICENSE (Proprietário — Cara Core Informática), VERSION e CHANGELOG para gestão de novas features. |
 
-O desenvolvimento e o código-fonte do projeto podem estar em repositório privado; aqui ficam apenas o **conteúdo público** e a gestão de **releases** e novas funcionalidades.
+O desenvolvimento e o código-fonte do projeto estão em repositório privado; aqui ficam apenas o **conteúdo gratuito para pessoas físicas** (uso pessoal e estudo) e a gestão de **releases** e novas funcionalidades.
+
+> ⚠️ **Licença proprietária — não é MIT, não é open source.** Gratuito para pessoas físicas (uso pessoal e estudo). Instituições e uso comercial requerem contratação. Decisão: 19/02/2026.
 
 ---
 
@@ -69,7 +71,7 @@ O conteúdo em **docs/** é espelho do portal **delivery/oidc** (matriz no domí
 2. **Ler a história** (Parte I → II → III) e conhecer os personagens (no app ou em `docs/`).
 3. **Praticar na Academia** com os 60 flashcards nos três níveis.
 4. **Consultar o glossário** e os mapas técnicos para fixar conceitos.
-5. **Contribuir** com sugestões, traduções ou melhorias via Issues e Pull Requests.
+5. **Contribuir** com sugestões e feedbacks via Issues (não é open source; não aceitamos pull requests externos ao ecossistema Cara Core).
 
 ---
 
@@ -86,6 +88,6 @@ O conteúdo em **docs/** é espelho do portal **delivery/oidc** (matriz no domí
 - **O que é:** Portal público do Reino OIDC — material educacional sobre OAuth 2.1 e OIDC.
 - **Para quem:** Jovens programadoras, estudantes de segurança e educadoras; foco em autenticação Google/Microsoft e Big Tech.
 - **Onde:** Site em `docs/`, delivery centralizado na Cara Core Informática; gestão de features neste repositório público [reino-oidc-releases](https://github.com/chmulato/reino-oidc-releases).
-- **Licença:** MIT — uso livre para fins educacionais e comerciais.
+- **Licença:** Proprietária Cara Core Informática — conteúdo gratuito para pessoas físicas (uso pessoal e estudo). Instituições e uso comercial requerem contratação. Não é MIT, não é open source.
 
-Feito com 💜 para a comunidade de desenvolvedoras e para o mundo da Security.
+Feito com 💜 para jovens programadoras e para o mundo da Security.
